@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Twitter Feed</title>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css">
+    <script src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+</head>
+
+<body>
+    <div class="hero is-info is-bold">
+        <h1 class="hero-body title">426 Twitter</h1>
+    </div>
+
+    <div class="columns">
+        <div class="column is-one-third">
+            <div class="box">
+                <h2 id="greeting"></h2>
+                <textarea class="textarea is-info" name="currentTweet" id="current" placeholder="What's on your mind?"></textarea>
+                <div class="level"></div>
+                <button class="button is-small is-info is-outlined is-rounded" id="button">Tweet!</button>
+            </div>
+        </div>
+        <div class="column is-two-thirds" id="feed">
+        </div>
+    </div>
+
+
+    
+    <script src="pull.js"></script>
+    <script src="push.js"></script>
+    <script src="read.js"></script>
+    <script src="actions.js"></script>
+    <script src="user.js"></script>
+    <script src="click-handlers.js"></script>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+</body>
